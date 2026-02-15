@@ -1,42 +1,22 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Мастер по маникюру Вероника | Минск",
+  title: "Мастер по маникюру Вероника | Минск | метро Восток",
   description:
-    "Профессиональный маникюр в Минске. Уютный кабинет, стерильные инструменты и качественные материалы. Онлайн-запись через DIKIDI.",
+    "Профессиональный маникюр в Минске рядом со станцией метро Восток (район Маяк Минска). Маникюр, гель-лак, наращивание. Уютный кабинет, стерильные инструменты и качественные материалы. Онлайн-запись через DIKIDI.",
+  keywords: [
+    "маникюр Минск",
+    "маникюр метро Восток",
+    "маникюр Маяк Минска",
+    "гель лак Минск",
+    "наращивание ногтей Минск",
+    "мастер по маникюру Вероника",
+  ],
+  openGraph: {
+    title: "Мастер по маникюру Вероника | Минск",
+    description:
+      "Маникюр в Минске рядом с метро Восток (Маяк Минска). Аккуратно, стерильно, с заботой о деталях.",
+    url: "https://nails-by-veronika.netlify.app",
+    siteName: "Nails by Veronika",
+    locale: "ru_RU",
+    type: "website",
+  },
 };
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="ru">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-
-        {/* DIKIDI Script */}
-        <Script
-          src="https://dikidi.net/assets/js/widget_record/widget2.min.js?v=1758698230"
-          strategy="afterInteractive"
-        />
-      </body>
-    </html>
-  );
-}
