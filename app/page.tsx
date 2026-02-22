@@ -4,64 +4,64 @@ export default function Home() {
 
       {/* Hero */}
       <section className="py-16 md:py-20 flex flex-col items-center justify-center text-center px-4 md:px-6 animate-fade-up">
-  <h1 className="text-2xl sm:text-3xl md:text-5xl font-light text-neutral-900 mb-4 leading-snug">
-    Мастер по маникюру Вероника
-  </h1>
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-light text-neutral-900 mb-4 leading-snug">
+          Мастер по маникюру Вероника
+        </h1>
 
-  <p className="text-sm md:text-lg max-w-md md:max-w-xl mb-6 text-gray-600">
-    Эстетичный и аккуратный маникюр в уютном собственном кабинете в Минске 💅
-  </p>
+        <p className="text-sm md:text-lg max-w-md md:max-w-xl mb-6 text-gray-600">
+          Эстетичный и аккуратный маникюр в уютном собственном кабинете в Минске 💅
+        </p>
 
-  <a
-    href="https://dikidi.net/#widget=204193"
-    data-widget="204193"
-    className="w-full sm:w-auto text-center bg-neutral-900 hover:bg-neutral-800 text-white px-6 py-3 rounded-full text-base transition-all duration-300 shadow-sm active:scale-95 inline-block"
-  >
-    Записаться онлайн
-  </a>
-</section>
+        <a
+          href="https://dikidi.net/#widget=204193"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full sm:w-auto text-center bg-neutral-900 hover:bg-neutral-800 text-white px-6 py-3 rounded-full text-base transition-all duration-300 shadow-sm active:scale-95 inline-block"
+        >
+          Записаться онлайн
+        </a>
+      </section>
 
 
 
       {/* Services */}
-      <section className="py-12 bg-rose-50 px-6 animate-fade-up">
+      <section id="services" className="py-12 bg-rose-50 px-6 animate-fade-up">
         <h2 className="text-3xl font-light text-rose-400 text-center mb-12">
           Услуги и цены
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
 
-  <div className="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition duration-300">
-    <h3 className="text-xl mb-2 font-medium">Маникюр</h3>
-    <p className="text-gray-500 mb-4 text-sm">Классический / аппаратный</p>
-    <p className="text-rose-400 text-2xl font-semibold">
-      от 40 BYN
-    </p>
-  </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition duration-300">
+            <h3 className="text-xl mb-2 font-medium">Маникюр</h3>
+            <p className="text-gray-500 mb-4 text-sm">Классический / аппаратный</p>
+            <p className="text-rose-400 text-2xl font-semibold">
+              от 40 BYN
+            </p>
+          </div>
 
-  <div className="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition duration-300 border border-rose-200">
-    <h3 className="text-xl mb-2 font-medium">Маникюр + гель-лак</h3>
-    <p className="text-gray-500 mb-4 text-sm">Укрепление + покрытие цветом</p>
-    <p className="text-rose-400 text-2xl font-semibold">
-      от 70 BYN
-    </p>
-  </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition duration-300 border border-rose-200">
+            <h3 className="text-xl mb-2 font-medium">Маникюр + гель-лак</h3>
+            <p className="text-gray-500 mb-4 text-sm">Укрепление + покрытие цветом</p>
+            <p className="text-rose-400 text-2xl font-semibold">
+              от 70 BYN
+            </p>
+          </div>
 
-  <div className="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition duration-300">
-    <h3 className="text-xl mb-2 font-medium">Наращивание</h3>
-    <p className="text-gray-500 mb-4 text-sm">Придание желаемой длины</p>
-    <p className="text-rose-400 text-2xl font-semibold">
-      от 100 BYN
-    </p>
-  </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition duration-300">
+            <h3 className="text-xl mb-2 font-medium">Наращивание</h3>
+            <p className="text-gray-500 mb-4 text-sm">Придание желаемой длины</p>
+            <p className="text-rose-400 text-2xl font-semibold">
+              от 100 BYN
+            </p>
+          </div>
 
-</div>
-
+        </div>
       </section>
 
 
       {/* Portfolio */}
-     <section className="py-12 bg-white px-6 animate-fade-up">
+      <section id="portfolio" className="py-12 bg-white px-6 animate-fade-up">
         <h2 className="text-3xl font-light text-rose-400 text-center mb-12">
           Портфолио
         </h2>
@@ -91,7 +91,7 @@ export default function Home() {
 
 
       {/* Location */}
-     <section className="py-12 md:py-16 bg-rose-50 px-4 md:px-6 text-center animate-fade-up">
+      <section id="location" className="py-12 md:py-16 bg-rose-50 px-4 md:px-6 text-center animate-fade-up">
         <h2 className="text-3xl font-light text-rose-400 mb-6">
           Где меня найти
         </h2>
